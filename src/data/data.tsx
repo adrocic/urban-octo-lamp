@@ -26,7 +26,7 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+// import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -36,7 +36,7 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
+  // TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Drocic Portfolio',
+  description: "Anel Drocic's Portfolio",
 };
 
 /**
@@ -59,7 +59,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  // Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -119,23 +119,6 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
     name: 'Frontend development',
     skills: [
       {
@@ -144,11 +127,15 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Typescript',
-        level: 7,
+        level: 8,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'React-Query',
+        level: 8,
+      },
+      {
+        name: 'Testing (Unit, E2E, and Integration)',
+        level: 7,
       },
     ],
   },
@@ -157,32 +144,24 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 8,
+        level: 6,
       },
       {
-        name: 'Rust',
+        name: 'Laravel',
         level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Spoken languages',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'English',
+        level: 10,
       },
       {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
+        name: 'Serbo-Croatian',
+        level: 6,
       },
     ],
   },
@@ -265,39 +244,55 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2014 - 2016',
+    location: 'North Dakota State University',
+    title: 'Bachelor of Science in Computer Science',
+    content: (
+      <p>
+        Ultimately, I discontinued school for personal reasons. However, during my time there, I learned my first
+        programming language, Java, and grasped most of the essential OOP concepts.
+      </p>
+    ),
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2016-2019',
+    location: 'Fargo, ND',
+    title: 'Self-Study',
+    content: (
+      <p>
+        I spent a few years working odd jobs. During these years I read many articles and studied a great deal of
+        software engineering principles, and ended up finding a real passion for learning in my own way. All I really
+        wanted to do was hack away and write code, the same way I did as a kid and teenager.
+      </p>
+    ),
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'March 2022 - March 2023',
+    location: 'Rightpoint',
+    title: 'Developer 3',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        ● Built micro frontend application from scratch ● Worked between multiple environments, frontend, backend, as
+        well as both Rightpoint and AB InBev as a consultant within the company ● Implemented custom data caching
+        pattern with Redux, and Sagas ● Assisted in leading associate and developer 1s with discovering work and
+        finishing work related tickets
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'September 2019 - February 2022',
+    location: 'Bushel',
+    title: 'Software Engineer 1',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        ● Successfully launched application from discovery to deployment ● Built front-end applications utilizing
+        Typescript/Javascript and React ● Implemented authentication and authorization and managed states/flows
+        throughout ● Worked on multiple projects with custom forms, form validation, and data representation ● Employed
+        Unit testing, Integration testing, and e2e testing ● Utilized libraries and built custom components for mocking
+        data and requests
       </p>
     ),
   },
@@ -306,26 +301,26 @@ export const experience: TimelineItem[] = [
 /**
  * Testimonial section
  */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
-};
+// export const testimonial: TestimonialSection = {
+//   imageSrc: testimonialImage,
+//   testimonials: [
+//     {
+//       name: 'John Doe',
+//       text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+//     },
+//     {
+//       name: 'Jane Doe',
+//       text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+//     },
+//     {
+//       name: 'Someone else',
+//       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+//     },
+//   ],
+// };
 
 /**
  * Contact section
@@ -333,27 +328,22 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: '',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'anel.drocic@gmail.com',
+      href: 'mailto:anel.drocic@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Fargo, ND, United States',
+      href: 'https://maps.app.goo.gl/EZoovpzTeYzcRw7p7',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'adrocic',
+      href: 'https://github.com/adrocic',
     },
   ],
 };
@@ -362,9 +352,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/adrocic'},
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/anel-drocic-337497168/'},
   // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
