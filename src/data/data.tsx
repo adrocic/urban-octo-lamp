@@ -172,70 +172,37 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Reactdex',
+    description: 'A pokedex built with react which showcases pokemon and their respective stats.',
+    url: 'https://github.com/adrocic/PokedexApp',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Breakout Blast',
+    description: 'Just a fun little breakout clone that I created using p5.js',
+    url: 'https://github.com/adrocic/Breakout-Blast',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Bees Lift',
+    description:
+      'This was a project under the Anheuser-Busch umbrella. Me and my team worked with the Bees team to build beverage products distribution and management software.',
+    url: 'https://www.bees.com/en/products#businessmade-mob',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Cargill European Silos Management',
+    description:
+      'In this project, myself and my senior engineer at the time, worked closely together for approximately 7 months building a frontend from scratch. We used cargills dev SOPs and worked within their own enviroment.',
+    url: 'https://www.cargill.com/agriculture',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Ringside',
+    description:
+      'This is one of my largest undertakings in Software Engineering. This is a fully-fledged application in which me and another dev worked together to build the entire frontend and it has all the bell and whistles.',
+    url: 'https://app.beringside.com/login',
     image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
