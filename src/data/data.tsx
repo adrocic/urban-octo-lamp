@@ -180,7 +180,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Breakout Blast',
     description: 'Just a fun little breakout clone that I created using p5.js',
-    url: 'https://github.com/adrocic/Breakout-Blast',
+    url: 'https://jade-quokka-d2f928.netlify.app/',
     image: porfolioImage2,
   },
   {
