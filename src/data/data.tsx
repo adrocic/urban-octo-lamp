@@ -181,21 +181,21 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Bees Lift',
     description:
-      'This was a project under the Anheuser-Busch umbrella. Me and my team worked with the Bees team to build beverage products distribution and management software.',
+      'This was a project under the Anheuser-Busch umbrella. Myself and my team worked with the Bees team to build beverage products distribution and management software.',
     url: 'https://www.bees.com/en/products#businessmade-mob',
     image: porfolioImage3,
   },
   {
     title: 'Cargill European Silos Management',
     description:
-      'In this project, myself and my senior engineer at the time, worked closely together for approximately 7 months building a frontend from scratch. We used cargills dev SOPs and worked within their own enviroment.',
+      'In this project I worked closely together with a senior engineer for approximately 7 months building a frontend from scratch. We used cargills dev SOPs and worked within their own enviroment.',
     url: 'https://www.cargill.com/agriculture',
     image: porfolioImage4,
   },
   {
     title: 'Ringside',
     description:
-      'This is one of my largest undertakings in Software Engineering. This is a fully-fledged application in which me and another dev worked together to build the entire frontend and it has all the bell and whistles.',
+      'This is one of my largest undertakings in Software Engineering. This is a fully-fledged application in which another engineer and myself worked together to build the entire frontend and it has all the bell and whistles.',
     url: 'https://app.beringside.com/login',
     image: porfolioImage5,
   },
