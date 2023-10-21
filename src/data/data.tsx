@@ -77,10 +77,11 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      download: true,
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
+      href: '/src/assets/ResumeAnelDrocic.pdf',
     },
     {
       href: `#${SectionId.Contact}`,

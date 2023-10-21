@@ -28,6 +28,7 @@ export interface Hero {
 }
 
 interface HeroActionItem {
+  download?: boolean;
   href: string;
   text: string;
   primary?: boolean;
